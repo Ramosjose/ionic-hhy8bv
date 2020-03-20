@@ -1,8 +1,13 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
+
+import { HttpClient } from "@angular/common/http";
 
 @Injectable()
 export class UserApiService {
+  private url: string = "";
+  constructor(private http: HttpClient) {}
 
-  constructor() { }
-
+  getUsers() {
+    return this.http.get("https://randomuser.me/api/?results=25");
+  }
 }
