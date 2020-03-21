@@ -9,6 +9,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { UserApiService } from './user-api.service';
 import {HttpClientModule} from '@angular/common/http';
+import { PokeApiService } from './poke-api.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import {HttpClientModule} from '@angular/common/http';
     TabsPage
   ],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler}, UserApiService
+    {provide: ErrorHandler, useClass: IonicErrorHandler}, UserApiService, PokeApiService
   ]
 })
 export class AppModule {}
