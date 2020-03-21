@@ -15,6 +15,7 @@ import { PokeApiService } from './poke-api.service';
 @NgModule({
   declarations: [
     MyApp,
+    PokemonPage,
     HomePage,
     TabsPage
   ],
@@ -27,6 +28,7 @@ import { PokeApiService } from './poke-api.service';
   entryComponents: [
     MyApp,
     HomePage,
+    PokemonPage,
     TabsPage
   ],
   providers: [
