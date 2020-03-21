@@ -15,8 +15,8 @@ import { PokeApiService } from './poke-api.service';
 @NgModule({
   declarations: [
     MyApp,
-    PokemonPage,
     HomePage,
+    PokemonPage,
     TabsPage
   ],
   imports: [
@@ -28,8 +28,8 @@ import { PokeApiService } from './poke-api.service';
   entryComponents: [
     MyApp,
     HomePage,
-    PokemonPage,
-    TabsPage
+    TabsPage,
+    PokemonPage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}, UserApiService, PokeApiService

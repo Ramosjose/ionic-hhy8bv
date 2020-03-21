@@ -7,7 +7,7 @@ import {  PokeApiService } from '../../app/poke-api.service';
   templateUrl: 'pokemon.html'
 })
 export class PokemonPage implements OnInit{
-pokemon: any[] = [];
+pokemons: any[] = [];
 
   constructor(public pokeService: PokeApiService, public navCtrl: NavController) { }
    ngOnInit() {
