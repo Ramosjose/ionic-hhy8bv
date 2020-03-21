@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { PokemonPage } from '../pages/pokemon/pekemon';
 
 import { UserApiService } from './user-api.service';
 import {HttpClientModule} from '@angular/common/http';
